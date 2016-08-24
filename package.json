@@ -8,7 +8,8 @@
     "minimist": "^1.2.0",
     "patternlab-node": "^2.0.0",
     "styleguidekit-assets-default": "^3.0.0",
-    "styleguidekit-mustache-default": "^3.0.0"
+    "styleguidekit-mustache-default": "^3.0.0",
+    "gulp-sass": "^2.3.2"
   },
   "keywords": [
     "Pattern Lab",
