@@ -1,8 +1,8 @@
 {
   "comments" : [
     {
-      "el": "#annotation-css-selector",
-      "title" : "Annotation title",
+      "el": ".annotation-black",
+      "title": "Annotation header",
       "comment": "Annotation description"
     }
   ]
