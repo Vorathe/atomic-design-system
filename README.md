@@ -4,8 +4,9 @@ Using the Gulp wrapper around [Pattern Lab Node Core](https://github.com/pattern
 
 ## Installing
   $ npm install -g gulp gulp-cli
+  
   $ npm install
-  
-  
+
+
 ## Running
   $ gulp patternlab:serve
