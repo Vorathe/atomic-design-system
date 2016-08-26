@@ -56,3 +56,20 @@
 .sg-annotations {
   border-top: 0 !important;
 }
+
+.sg-pattern-head > .sg-pattern-title {
+  font-family: inherit !important;
+}
+
+.annotation-tip {
+  line-height: 1.5em;
+}
+
+.sg-header {
+  background: #d55227 !important;
+}
+
+.sg-annotations-list>li:before {
+  width: 18px !important;
+  height: 18px !important;
+}
