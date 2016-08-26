@@ -31,3 +31,7 @@ $info:            $spindle;
 $warning:         $candlelight;
 $danger:          $valencia;
 $border-color:    $silver;
+
+//COMPONENT STATES
+$primary-hover:   lighten($primary, 10%);
+$secondary-hover: lighten($secondary, 10%);
