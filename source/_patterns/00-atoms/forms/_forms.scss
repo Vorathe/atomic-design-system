@@ -14,17 +14,40 @@ input[type="tel"],
 input[type="color"],
 select,
 textarea {
-    padding: 8px;
+    padding: 11px;
+    max-height: 42px;
     display: block;
     border: 1px solid $silver;
-    border-radius: 6px;
     vertical-align: middle;
     background-color: $white;
     transition: all linear $transition-speed;
     color: $solid-gray;
+    width: 100%;
+    font-size: 1rem;
     &:focus {
         outline: 0;
         box-shadow: 0 0 0 1px $primary;
         border-color: $primary;
     }
+}
+
+textarea {
+  max-height: 400px;
+}
+
+.select-wrapper {
+	position: relative;
+	.select-icon {
+		width: 44px;
+		height: 40px;
+		position: absolute;
+		top: 1px;
+		bottom: 0;
+		right: 1px;
+		background: linear-gradient(to right, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+		cursor: pointer;
+	}
+	svg text {
+    fill: #000;
+	}
 }
