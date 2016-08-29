@@ -35,6 +35,15 @@ textarea {
   max-height: 400px;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
+select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .select-wrapper {
 	position: relative;
 	.select-icon {

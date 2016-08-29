@@ -16,8 +16,8 @@
 
 .btn.primary {
   background-color: $primary;
-  box-shadow: 0 1px 3px darken($primary, 25%);
-  border-color: darken($primary, 35%);
+  box-shadow: 0 1px 3px darken($primary, 15%);
+  border-color: darken($primary, 10%);
   &:hover {
     background-color: lighten($primary, 10%);
   }
@@ -25,8 +25,8 @@
 
 .btn.secondary {
   background-color: $secondary;
-  box-shadow: 0 1px 3px darken($secondary, 25%);
-  border-color: darken($secondary, 15%);
+  box-shadow: 0 1px 3px darken($secondary, 15%);
+  border-color: darken($secondary, 10%);
   &:hover {
     background-color: lighten($secondary, 10%);
   }

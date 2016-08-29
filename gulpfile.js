@@ -150,7 +150,6 @@ function reload() {
 
 function watch() {
   gulp.watch(path.resolve(paths().source.css, '**/*.scss')).on('change', gulp.series('pl-sass'));
-  gulp.watch(path.resolve(paths().source.patterns, '**/*.scss')).on('change', gulp.series('pl-sass'));
   gulp.watch(path.resolve(paths().source.css, '**/*.css')).on('change', gulp.series('pl-copy:css', reload));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*')).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reload));
 
