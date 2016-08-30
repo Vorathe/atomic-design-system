@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.sg-colors {
+.sg-colors, .sg-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-.sg-colors li {
+.sg-colors li, .sg-card li {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -41,11 +41,23 @@
   border-radius: 8px;
 }
 
-.sg-swatch {
+.sg-swatch, .sg-display {
   display: block;
   height: 4em;
   margin-bottom: 0.3em;
   border-radius: 5px;
+}
+
+.sg-display {
+  text-align: center;
+}
+
+.sg-display > i {
+  font-size: 2em;
+}
+
+.sg-display {
+  padding: 1em 0;
 }
 
 .sg-label {
