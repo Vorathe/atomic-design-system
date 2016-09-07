@@ -12,6 +12,10 @@
   text-transform: uppercase;
   color: $white;
   transition: all linear $transition-speed;
+  width: 100%;
+  @media (min-width: $ml) {
+    width: auto;
+  }
 }
 
 .btn.primary {

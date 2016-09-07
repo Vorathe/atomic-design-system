@@ -48,7 +48,7 @@ select{
 	position: relative;
 	.select-icon {
 		width: 44px;
-		height: 40px;
+		height: 39px;
 		position: absolute;
 		top: 1px;
 		bottom: 0;
@@ -58,5 +58,178 @@ select{
 	}
 	svg text {
     fill: $solid-gray;
+    font-family: 'icomoon';
 	}
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked,
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  &:focus + label:after {
+      border-color: $solid-gray;
+  }
+}
+
+[type="radio"] + label, [type="checkbox"] + label {
+    color: $solid-gray;
+    font-weight: 500;
+}
+
+[type="radio"]:not(:checked) + label.badge,
+[type="radio"]:checked + label.badge
+ {
+    padding-bottom: 40px;
+    padding-left: 0;
+    display: inline-block;
+}
+
+[type="radio"]:not(:checked) + label.badge:after,
+[type="radio"]:checked + label.badge:after {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    margin-left: -12px;
+}
+
+[type="radio"]:not(:checked) + label.badge:before,
+[type="radio"]:checked + label.badge:before {
+    top: auto;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -7px;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+	padding-left: 32px;
+	margin-right: 24px;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  line-height: $base-line-height;
+  &:hover {
+      color: $primary;
+  }
+  &:last-child {
+      margin-bottom: 0;
+  }
+  @media (min-width: $tp) {
+      display: inline-block;
+      margin-bottom: 0;
+  }
+  &.badge {
+      margin-right: 0;
+  }
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 32px;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: inline-block;
+  word-break: break-word;
+  line-height: $base-line-height;
+}
+
+[type="checkbox"]:checked + label, [type="radio"]:checked + label {
+  color: $primary;
+}
+
+// Checkbox aspect
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+}
+
+[type="checkbox"]:not(:checked) + label:before {
+    border: 1px solid $silver;
+    background: #fff;
+}
+
+[type="checkbox"]:checked + label:before {
+    background: $primary;
+}
+
+[type="radio"]:not(:checked) + label:after,
+[type="radio"]:checked + label:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+	border: 1px solid $silver;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+// Checked mark aspect
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: "\ed71";
+    font-family: 'icomoon';
+    color: #fff;
+    transition: all 0.2s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    width: 25px;
+}
+[type="radio"]:not(:checked) + label:before,
+[type="radio"]:checked + label:before {
+    content: '';
+    color: #fff;
+    transition: all 0.2s;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    z-index: 1;
+}
+
+[type="radio"]:checked + label:before {
+	background: $primary;
+}
+
+// Checked mark aspect changes
+[type="checkbox"]:not(:checked) + label:after,
+[type="radio"]:not(:checked) + label:before {
+  color: #000;
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after,
+[type="radio"]:checked + label:before {
+  opacity: 1;
+  transform: scale(1);
+}
+// Disabled checkbox
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: $solid-gray;
 }
