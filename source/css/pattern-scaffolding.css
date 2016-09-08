@@ -85,3 +85,11 @@
   width: 18px !important;
   height: 18px !important;
 }
+
+.sg-list > li {
+  margin-bottom: 0.625em;
+}
+
+.sg-list > li:last-child {
+  margin-bottom: 0;
+}
